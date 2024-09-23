@@ -510,9 +510,13 @@
                                 <i class="ri-checkbox-circle-line"></i> <p data-lang="pricinglli5">Performance Enhancers</p>
                             </li>
                         </ul>
-                        <a data-lang="button3" href="#" class="button button__flex pricing__button">
-                            Purchase Now
-                        </a>
+                        <form action="{% url 'create_checkout_session' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="price_id" value="price_1PoTdVJG8pA6oBul51IAepF6">
+                            <button type="submit" class="button button__flex pricing__button">
+                                Purchase Now
+                            </button>
+                        </form>
                     </article>
         
                     <article class="pricing__card article2">
@@ -540,9 +544,13 @@
                                 <i class="ri-checkbox-circle-line"></i> <p data-lang="pricinglli5">Performance Enhancers</p>
                             </li>
                         </ul>
-                        <a data-lang="button3" href="#" class="button button__flex pricing__button">
-                            Purchase Now
-                        </a>
+                        <form action="{% url 'create_checkout_session' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="price_id" value="price_1PoTf5JG8pA6oBulTR2YfLUm">
+                            <button type="submit" class="button button__flex pricing__button">
+                                Purchase Now
+                            </button>
+                        </form>
                     </article>
         
                     <article class="pricing__card article3">
@@ -570,13 +578,17 @@
                                 <i class="ri-checkbox-circle-line"></i> <p data-lang="pricinglli5">Performance Enhancers</p>
                             </li>
                         </ul>
-                        <a data-lang="button3" href="#" class="button button__flex pricing__button">
-                            Purchase Now
-                        </a>
+                        <form action="{% url 'create_checkout_session' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="price_id" value="price_1PoTgsJG8pA6oBulquxORBs4">
+                            <button type="submit" class="button button__flex pricing__button">
+                                Purchase Now
+                            </button>
+                        </form>
                     </article>
                 </div>
             </div>
-        </section> 
+        </section>
 
       
       
