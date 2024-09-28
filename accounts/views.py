@@ -6,7 +6,7 @@ import stripe
 # إعداد مفتاح API الخاص بـ Stripe من الإعدادات
 stripe.api_key = settings.STRIPE_API_KEY
 
-YOUR_DOMAIN = "https://wassim-jet.vercel.app"
+YOUR_DOMAIN = "https://wassimcoaching.com"
 
 def index(request):
     return render(request, 'accounts/index.html')
@@ -49,5 +49,6 @@ def success(request):
 
 def cancel(request):
     return render(request, 'accounts/cancel.html') 
+
 def second(request):
     return render(request, 'accounts/second.html')
